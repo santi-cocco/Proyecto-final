@@ -1,0 +1,121 @@
+/*inicio de pagina de Inicio*/
+
+#contenedorInicio {
+    justify-content: center;
+    align-items: center;
+}
+
+/*Primer seccion Imagen del Inicio*/
+
+.contenedorInicioPrincipal {
+    height: auto;
+    width: 100%;
+
+    a .imagenTienda {
+        display: inline-flex;
+        border-radius: 50px;
+        height: auto;
+        width: 100%;
+        background: var(--color-primario);
+        border-style: double;
+        margin-top: 10px;
+    }
+
+    .subtitulo {
+        height: auto;
+        width: 100%;
+        background: var(--color-gradient1);
+        font-family: var(--fuente-subtitulo);
+        font-size: 25px;
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px 10px;
+    }
+}
+
+.imagenTienda:hover {
+    padding: 15px 15px;
+    border-style: double;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0, 6s ease 0s;
+    box-shadow: 0 0 5px rgb(0, 255, 72), 0 0 25px, 0 0 50px rgb(0, 255, 72), 0 0 100px rgb(0, 255, 72), 0 0 200px rgb(0, 255, 72);
+}
+
+.subtitulo:hover {
+    color: var(--color-blanco);
+    padding: 10px 25px;
+    background: $color-primario;
+    border-style: groove;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0, 5s ease 0s;
+}
+
+/*Fin Primer Imagen del Inicio*/
+/*segunda seccion de imagenes del Inicio*/
+
+#contenedorInicioPrincipalSegundo {
+    display: inline-flex;
+    width: 100%;
+    height: max-content;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    #fotos {
+        width: 900px;
+        height: auto;
+        display: inline-flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .imagenInicio {
+        width: 180px;
+        height: 150px;
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        border-radius: 50px;
+    }
+}
+
+.imagenInicio:hover {
+    padding: 15px 15px;
+    border-style: groove;
+    background: var(--color-primario);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0, 6s ease 0s;
+    box-shadow: 0 0 5px rgb(0, 255, 72), 0 0 25px, 0 0 50px rgb(0, 255, 72), 0 0 100px rgb(0, 255, 72), 0 0 200px rgb(0, 255, 72);
+}
+
+#contenedorInicioPrincipalSegundo .subtitulo {
+    background: var(--color-gradient1);
+    font-family: var(--fuente-subtitulo);
+    font-size: 15px;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px 10px;
+    justify-content: center;
+
+    &:hover {
+        color: var(--color-blanco);
+        padding: none;
+        background: var(--color-primario);
+        border-style: groove;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all 0, 5s ease 0s;
+        font-size: larger;
+    }
+}
+
+/*fin de segunda seccion de imagenes del Inicio*/
+/*Fin de pagina de inicio*/

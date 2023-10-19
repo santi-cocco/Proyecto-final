@@ -1,0 +1,19 @@
+/*Inicio Footer*/
+
+footer {
+    display: flex;
+    width: 100%;
+    color: var(--color-blanco);
+    text-align: center;
+    font-family: var(--fuente-titulo);
+
+    #mapa {
+        height: 100%;
+        width: 100%;
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+        padding-right: 15px;
+        border-radius: 30px;
+    }
+}

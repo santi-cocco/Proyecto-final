@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body */
+
+body {
+  background-color: var(--color-negro);
+  background-color: var(--bs-body-bg);
+}
+
+p {
+  font-family: var(--fuente-texto);
+  background: var(--color-negro);
+  border-radius: 3px;
+  margin-top: 15px;
+}
+
+/*main */
+
+main {
+  background-color: var(--color-negro);
+  color: var(--color-blanco);
+  text-align: center;
+}

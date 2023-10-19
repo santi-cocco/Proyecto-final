@@ -1,0 +1,56 @@
+/*Inicio de la pagina Actividades*/
+
+/* Estilos de la galería de tarjetas */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    justify-items: center;
+}
+
+.maincontainer {
+    position: relative;
+    width: 250px;
+    height: 280px;
+    display: flex;
+}
+
+.thecard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+
+    &:hover {
+        transform: rotateY(180deg);
+    }
+}
+
+.thefront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.theback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: var(--color-gradient1);
+    color: var(--color-blanco);
+    transform: rotateY(180deg);
+    text-align: center;
+    font-family: var(--fuente-texto);
+    font-size: 18px;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(0, 255, 72), 0 0 25px, 0 0 50px rgb(0, 255, 72), 0 0 100px rgb(0, 255, 72), 0 0 200px rgb(0, 255, 72);
+}

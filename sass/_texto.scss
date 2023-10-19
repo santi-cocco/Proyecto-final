@@ -1,0 +1,55 @@
+/* Estilos del título y texto de la tarjeta */
+
+.card-title {
+    background-color: #00000083;
+    color: var(--color-blanco);
+    font-family: var(--fuente-subtitulo);
+    padding: none;
+    border: #030303 3px groove;
+    font-size: 24px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.actividadesTexto {
+    margin-top: 10px;
+    line-height: 1.4;
+    color: var(--color-blanco);
+    font-family: var(--fuente-texto);
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 16px;
+}
+
+/* Estilos de las tarjetas al hacer hover */
+
+.card:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    cursor: pointer;
+    transform: scale(1.04);
+    transition: all 1s ease;
+}
+
+/* Fin de la pagina "actividades" */
+/*Inicio de la pagina de "Prueba"*/
+/*Parrafo de la pestaña de pase de prueba*/
+
+.textoPrueba {
+    font-family: var(--fuente-texto);
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 20px 20px;
+    border-style: outset;
+    background: var(--border-secundario);
+}
+
+/*Inicio de la pagina de tienda*/
+
+.TextoBoton {
+    font-family: var(--fuente-texto);
+    padding: 5px;
+    color: var(--color-blanco);
+    margin: 5px 0px;
+    background: var(--color-negro);
+    border-radius: 10px;
+}

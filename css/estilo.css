@@ -1,0 +1,735 @@
+@charset "UTF-8";
+:root {
+  --color-primario: rgba(9, 240, 9, 0.5);
+  --color-secundario: rgb(58, 58, 58);
+  --color-negro: black;
+  --color-blanco: #fff;
+  --color-gradient1: linear-gradient(to left, black -50%, rgb(128, 128, 128) 70%);
+  --fuente-titulo: 'Permanent Marker', cursive;
+  --fuente-subtitulo: 'DM Serif Display', serif;
+  --fuente-texto: 'Montserrat', sans-serif;
+}
+
+/* header */
+/* line 3, E:/DESARROLLO WEB/Proyecto final/SCSS/_navbar.scss */
+.encabezado {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  font-family: var(--fuente-titulo);
+}
+
+/* line 11, E:/DESARROLLO WEB/Proyecto final/SCSS/_navbar.scss */
+.navbar-toggler {
+  background: var(--color-gradient1);
+}
+
+/*logo*/
+/* line 17, E:/DESARROLLO WEB/Proyecto final/SCSS/_navbar.scss */
+.logo {
+  height: 85px;
+  border-radius: 10px;
+  border-style: groove;
+  background: var(--color-gradient1);
+  width: auto;
+  padding: 2px;
+}
+
+/* line 25, E:/DESARROLLO WEB/Proyecto final/SCSS/_navbar.scss */
+.logo:hover {
+  padding: 10px 25px;
+  border-style: double;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0, 6s ease 0s;
+}
+
+/*navegador*/
+/* line 36, E:/DESARROLLO WEB/Proyecto final/SCSS/_navbar.scss */
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  background: rgba(39, 39, 39, 0.308);  
+  border-radius: 30px;
+  padding: 16px;
+}
+
+/* line 43, E:/DESARROLLO WEB/Proyecto final/SCSS/_navbar.scss */
+nav ul li a:hover {
+  color: #000000ed;
+  padding: 10px 25px;
+  background-color: #00000032;
+  border-style: groove;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0, 3s ease 0s;
+}
+
+/* line 53, E:/DESARROLLO WEB/Proyecto final/SCSS/_navbar.scss */
+a {
+  text-decoration: double;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+}
+
+/*///////////variable de colores//////////////*/
+/*///////////variable de fuentes//////////////*/
+/* line 1, E:/DESARROLLO WEB/Proyecto final/SCSS/_reset.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body */
+/* line 8, E:/DESARROLLO WEB/Proyecto final/SCSS/_reset.scss */
+body {
+  background-color: var(--color-negro);
+  background-color: var(--bs-body-bg);
+}
+
+/* line 13, E:/DESARROLLO WEB/Proyecto final/SCSS/_reset.scss */
+p {
+  font-family: var(--fuente-texto);
+  background: var(--color-negro);
+  border-radius: 3px;
+  margin-top: 15px;
+}
+
+/*main */
+/* line 22, E:/DESARROLLO WEB/Proyecto final/SCSS/_reset.scss */
+main {
+  background-color: var(--color-negro);
+  color: var(--color-blanco);
+  text-align: center;
+}
+
+/* titulo*/
+/* line 3, E:/DESARROLLO WEB/Proyecto final/SCSS/_titulos.scss */
+.subencabezado {
+  text-align: center;
+  background: var(--color-negro);
+  margin-top: 15px;
+  color: var(--color-blanco);
+  padding: 10px;
+  background-color: var(--color-negro);
+}
+
+/* line 11, E:/DESARROLLO WEB/Proyecto final/SCSS/_titulos.scss */
+.subencabezado .titulo {
+  font-family: var(--fuente-titulo);
+  text-align: center;
+  background: var(--color-gradient1);
+  margin-top: 15px;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-radius: 10px;
+  color: var(--color-blanco);
+  padding: 10px;
+  background-color: var(--color-negro);
+}
+
+/* line 24, E:/DESARROLLO WEB/Proyecto final/SCSS/_titulos.scss */
+.subencabezado .subtituloPrincipal {
+  width: auto;
+  background: var(--color-negro);
+  font-family: var(--fuente-subtitulo);
+  font-size: 25px;
+  border-radius: 10px;
+  margin: auto;
+  padding: 10px 10px;
+  text-decoration: underline;
+}
+
+/*Vista tablet*/
+/*768px hasta 1023px aproximadamente*/
+/* line 4, E:/DESARROLLO WEB/Proyecto final/SCSS/_responsive.scss */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* line 10, E:/DESARROLLO WEB/Proyecto final/SCSS/_responsive.scss */
+#mapa {
+  width: 100%;
+  height: 500px;
+  border: none;
+}
+
+/* line 16, E:/DESARROLLO WEB/Proyecto final/SCSS/_responsive.scss */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* line 20, E:/DESARROLLO WEB/Proyecto final/SCSS/_responsive.scss */
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* line 26, E:/DESARROLLO WEB/Proyecto final/SCSS/_responsive.scss */
+a {
+  color: #070707;
+  text-decoration: none;
+}
+
+/* Establece un tamaño de fuente más pequeño y otros ajustes para dispositivos móviles */
+@media (min-width: 992px) {
+
+  /* line 33, E:/DESARROLLO WEB/Proyecto final/SCSS/_responsive.scss */
+  #BotonHorarios {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+
+  /* line 39, E:/DESARROLLO WEB/Proyecto final/SCSS/_responsive.scss */
+  .container #tabla {
+    display: none;
+  }
+}
+
+@media (max-width: 710px) {
+
+  /* line 45, E:/DESARROLLO WEB/Proyecto final/SCSS/_responsive.scss */
+  .card {
+    width: 100%;
+  }
+
+  /* line 49, E:/DESARROLLO WEB/Proyecto final/SCSS/_responsive.scss */
+  .container {
+    justify-content: center;
+  }
+}
+
+/*Inicio Footer*/
+/* line 3, E:/DESARROLLO WEB/Proyecto final/SCSS/_footer.scss */
+footer {
+  display: flex;
+  width: 100%;
+  color: var(--color-blanco);
+  text-align: center;
+  font-family: var(--fuente-titulo);
+}
+
+/* line 10, E:/DESARROLLO WEB/Proyecto final/SCSS/_footer.scss */
+footer #mapa {
+  height: 100%;
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  border-radius: 30px;
+}
+
+/* line 1, E:/DESARROLLO WEB/Proyecto final/SCSS/_acordion.scss */
+.listas {
+  border: 3px solid;
+  border-style: none;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  font-family: var(--fuente-texto);
+}
+
+/* line 12, E:/DESARROLLO WEB/Proyecto final/SCSS/_acordion.scss */
+.accordion {
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* line 17, E:/DESARROLLO WEB/Proyecto final/SCSS/_acordion.scss */
+.accordion-item:hover {
+  border-radius: 5px;
+  margin: 10px 10px;
+  padding: 10px;
+  box-shadow: 0 0 5px #3a3a3a, 0 0 25px, 0 0 50px #3a3a3a, 0 0 100px #3a3a3a, 0 0 200px #474747;
+}
+
+/* line 24, E:/DESARROLLO WEB/Proyecto final/SCSS/_acordion.scss */
+.accordion-button {
+  font-family: var(--fuente-subtitulo);
+  cursor: pointer;
+  background: var(--color-secundario);
+  border-radius: 10px;
+}
+
+/*Fin de la pagina de "nosotros"*/
+/*primer parrafo de la pagina de "nosotros"*/
+/* line 3, E:/DESARROLLO WEB/Proyecto final/SCSS/_botones.scss */
+.btn:hover {
+  box-shadow: 0 0 5px #00ff48, 0 0 25px, 0 0 50px #00ff48, 0 0 100px #00ff48, 0 0 200px #00ff48;
+}
+
+/*Boton de la pagina "prueba"*/
+/* line 7, E:/DESARROLLO WEB/Proyecto final/SCSS/_botones.scss */
+.btn {
+  background-color: var(--color-primario);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 0 5px #06ef82, 0 0 25px #06ef82;
+  cursor: pointer;
+}
+
+/* line 15, E:/DESARROLLO WEB/Proyecto final/SCSS/_botones.scss */
+.btn:hover {
+  box-shadow: 0 0 5px #00ff48, 0 0 25px #00ff48, 0 0 50px #00ff48, 0 0 100px #00ff48, 0 0 200px #00ff48;
+}
+
+/*Fin del formulario de la pagina "prueba"*/
+/*Boton de la pagina  "tienda"*/
+/* line 22, E:/DESARROLLO WEB/Proyecto final/SCSS/_botones.scss */
+.boton {
+  background: var(--color-gradient1);
+  border-radius: 25px;
+  padding: 25px;
+  margin: 50px 0px;
+  box-shadow: 0 0 5px #06ef82 0 0 25px #06ef82;
+}
+
+/* line 29, E:/DESARROLLO WEB/Proyecto final/SCSS/_botones.scss */
+.boton:hover {
+  box-shadow: 0 0 5px #00ff48, 0 0 25px, 0 0 50px #00ff48, 0 0 100px #00ff48, 0 0 200px #00ff48;
+}
+
+/* line 34, E:/DESARROLLO WEB/Proyecto final/SCSS/_botones.scss */
+.btnTienda {
+  background: var(--color-negro);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: var(--color-blanco);
+}
+
+/* line 42, E:/DESARROLLO WEB/Proyecto final/SCSS/_botones.scss */
+.btnTienda:hover {
+  box-shadow: 0 0 5px #00ff48, 0 0 25px, 0 0 50px #00ff48, 0 0 100px #00ff48, 0 0 200px #00ff48;
+}
+
+/*Fin de la pagina de tienda*/
+/*Inicio de la pagina "Horario de clases"*/
+/*Estilo de tabla*/
+/* line 4, E:/DESARROLLO WEB/Proyecto final/SCSS/_tabla.scss */
+#tabla {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: max-content;
+  margin: auto;
+  height: auto;
+  border-style: ridge;
+  background: var(--color-primario);
+  font-style: italic;
+  padding: 3rem;
+  border-radius: 5px;
+}
+
+/*Fin de estilo de tabla*/
+/*Estilos de celdas*/
+/* line 21, E:/DESARROLLO WEB/Proyecto final/SCSS/_tabla.scss */
+th {
+  background: var(--color-gradient1);
+  padding: 1rem;
+  width: 10%;
+  max-width: 15%;
+  font-family: var(--fuente-texto);
+  border-radius: 5px;
+}
+
+/* line 30, E:/DESARROLLO WEB/Proyecto final/SCSS/_tabla.scss */
+.hora {
+  background: var(--color-negro);
+  width: 10%;
+  max-width: 15%;
+  border-radius: 5px;
+  box-shadow: inset 20px 10px 18px #00ff48, 0 0 25px, -20px -21px 20px 20px #00ff48, inset -20px 7px 100px 20px #00ff48, 0 0 200px #00ff48;
+}
+
+/*Fin de estilos de celdas*/
+/*Fin de Estilo de la pestaña "Horario de clases"*/
+/*Formulario de la pestaña prueba*/
+/* line 3, E:/DESARROLLO WEB/Proyecto final/SCSS/_formulario.scss */
+.form-group {
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  font-family: var(--fuente-subtitulo);
+  background: var(--color-secundario);
+  height: auto;
+  font-size: 18px;
+  padding: 0 15px;
+  border: 3px solid var(--color-primario);
+}
+
+/* line 15, E:/DESARROLLO WEB/Proyecto final/SCSS/_formulario.scss */
+#legend {
+  width: fit-content;
+  float: none;
+  border: 3px solid var(--color-primario);
+  font-size: 16px;
+  background: var(--color-gradient1);
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  font-family: var(--fuente-titulo);
+}
+
+/* Estilos generales para los input */
+/* line 29, E:/DESARROLLO WEB/Proyecto final/SCSS/_formulario.scss */
+.input {
+  font-family: var(--fuente-texto);
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid var(--color-secundario);
+  border-radius: 5px;
+  transition: border-color 0.5s, box-shadow 0.5s;
+  font-size: 12px;
+}
+
+/* line 39, E:/DESARROLLO WEB/Proyecto final/SCSS/_formulario.scss */
+.input:hover {
+  border: 2px solid;
+  border-color: var(--color-primario);
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+  transform: scale(1.02);
+  transition: border 0.3s, box-shadow 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+/* line 48, E:/DESARROLLO WEB/Proyecto final/SCSS/_formulario.scss */
+.input:focus {
+  border: 6px solid var(--color-primario);
+  box-shadow: 0 0 10px var(--color-gradient1);
+}
+
+/* Estilos del título y texto de la tarjeta */
+/* line 3, E:/DESARROLLO WEB/Proyecto final/SCSS/_texto.scss */
+.card-title {
+  background-color: #00000083;
+  color: var(--color-blanco);
+  font-family: var(--fuente-subtitulo);
+  padding: none;
+  border: #030303 3px groove;
+  font-size: 24px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* line 14, E:/DESARROLLO WEB/Proyecto final/SCSS/_texto.scss */
+.actividadesTexto {
+  margin-top: 10px;
+  line-height: 1.4;
+  color: var(--color-blanco);
+  font-family: var(--fuente-texto);
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 16px;
+}
+
+/* Estilos de las tarjetas al hacer hover */
+/* line 25, E:/DESARROLLO WEB/Proyecto final/SCSS/_texto.scss */
+.card:hover {
+  background-color: var(--color-secundario);
+  color: var(--color-blanco);
+  cursor: pointer;
+  transform: scale(1.04);
+  transition: all 1s ease;
+}
+
+/* Fin de la pagina "actividades" */
+/*Inicio de la pagina de "Prueba"*/
+/*Parrafo de la pestaña de pase de prueba*/
+/* line 37, E:/DESARROLLO WEB/Proyecto final/SCSS/_texto.scss */
+.textoPrueba {
+  font-family: var(--fuente-texto);
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 20px 20px;
+  border-style: outset;
+  background: var(--border-secundario);
+}
+
+/*Inicio de la pagina de tienda*/
+/* line 47, E:/DESARROLLO WEB/Proyecto final/SCSS/_texto.scss */
+.TextoBoton {
+  font-family: var(--fuente-texto);
+  padding: 5px;
+  color: var(--color-blanco);
+  margin: 5px 0px;
+  background: var(--color-negro);
+  border-radius: 10px;
+}
+
+/* Estilos de la imagen de actividades*/
+/* line 3, E:/DESARROLLO WEB/Proyecto final/SCSS/_imagenes.scss */
+.imagenActividades {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+/*Inicio de la pagina de "nosotros"*/
+/*Imagen principal de la pagina de "nosotros"*/
+/* line 13, E:/DESARROLLO WEB/Proyecto final/SCSS/_imagenes.scss */
+.imagenNosotros {
+  width: 20%;
+  height: auto;
+  border: var(--color-blanco) 4px solid;
+  border-radius: 40px;
+}
+
+/*Imagen principal de la pagina de "tienda"*/
+/* line 22, E:/DESARROLLO WEB/Proyecto final/SCSS/_imagenes.scss */
+.imagenTienda {
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+  border-color: var(--color-negro);
+  background: var(--color-gradient1);
+}
+
+/*Contenido de la navegacion del Footer*/
+/* line 3, E:/DESARROLLO WEB/Proyecto final/SCSS/_redes.scss */
+.redes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  display: flex;
+  width: 100%;
+  font-size: 40px;
+  justify-content: space-evenly;
+}
+
+/* line 14, E:/DESARROLLO WEB/Proyecto final/SCSS/_redes.scss */
+.redes .facebook {
+  color: blue;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+/* line 21, E:/DESARROLLO WEB/Proyecto final/SCSS/_redes.scss */
+.instagram {
+  color: #fff;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+/* line 27, E:/DESARROLLO WEB/Proyecto final/SCSS/_redes.scss */
+.whatsapp {
+  color: #04fb3e;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+/* line 33, E:/DESARROLLO WEB/Proyecto final/SCSS/_redes.scss */
+.redes a:hover {
+  transform: scale(1.5);
+}
+
+/*fin del Footer*/
+/*Inicio de la pagina Actividades*/
+/* Estilos de la galería de tarjetas */
+/* line 5, E:/DESARROLLO WEB/Proyecto final/SCSS/_card.scss */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  justify-items: center;
+}
+
+/* line 12, E:/DESARROLLO WEB/Proyecto final/SCSS/_card.scss */
+.maincontainer {
+  position: relative;
+  width: 250px;
+  height: 280px;
+  display: flex;
+}
+
+/* line 19, E:/DESARROLLO WEB/Proyecto final/SCSS/_card.scss */
+.thecard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+}
+
+/* line 26, E:/DESARROLLO WEB/Proyecto final/SCSS/_card.scss */
+.thecard:hover {
+  transform: rotateY(180deg);
+}
+
+/* line 31, E:/DESARROLLO WEB/Proyecto final/SCSS/_card.scss */
+.thefront {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* line 41, E:/DESARROLLO WEB/Proyecto final/SCSS/_card.scss */
+.theback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: var(--color-gradient1);
+  color: var(--color-blanco);
+  transform: rotateY(180deg);
+  text-align: center;
+  font-family: var(--fuente-texto);
+  font-size: 18px;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #00ff48, 0 0 25px, 0 0 50px #00ff48, 0 0 100px #00ff48, 0 0 200px #00ff48;
+}
+
+/*inicio de pagina de Inicio*/
+/* line 3, E:/DESARROLLO WEB/Proyecto final/SCSS/_inicio.scss */
+#contenedorInicio {
+  justify-content: center;
+  align-items: center;
+}
+
+/*Primer seccion Imagen del Inicio*/
+/* line 10, E:/DESARROLLO WEB/Proyecto final/SCSS/_inicio.scss */
+.contenedorInicioPrincipal {
+  height: auto;
+  width: 100%;
+}
+
+/* line 14, E:/DESARROLLO WEB/Proyecto final/SCSS/_inicio.scss */
+.contenedorInicioPrincipal a .imagenTienda {
+  display: inline-flex;
+  border-radius: 50px;
+  height: auto;
+  width: 100%;
+  background: var(--color-primario);
+  border-style: double;
+  margin-top: 10px;
+}
+
+/* line 24, E:/DESARROLLO WEB/Proyecto final/SCSS/_inicio.scss */
+.contenedorInicioPrincipal .subtitulo {
+  height: auto;
+  width: 100%;
+  background: var(--color-gradient1);
+  font-family: var(--fuente-subtitulo);
+  font-size: 25px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 10px;
+}
+
+/* line 38, E:/DESARROLLO WEB/Proyecto final/SCSS/_inicio.scss */
+.imagenTienda:hover {
+  padding: 15px 15px;
+  border-style: double;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0, 6s ease 0s;
+  box-shadow: 0 0 5px #00ff48, 0 0 25px, 0 0 50px #00ff48, 0 0 100px #00ff48, 0 0 200px #00ff48;
+}
+
+/* line 47, E:/DESARROLLO WEB/Proyecto final/SCSS/_inicio.scss */
+.subtitulo:hover {
+  color: var(--color-blanco);
+  padding: 10px 25px;
+  background: var(--color-primario);
+  border-style: groove;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0, 5s ease 0s;
+}
+
+/*Fin Primer Imagen del Inicio*/
+/*segunda seccion de imagenes del Inicio*/
+/* line 60, E:/DESARROLLO WEB/Proyecto final/SCSS/_inicio.scss */
+#contenedorInicioPrincipalSegundo {
+  display: inline-flex;
+  width: 100%;
+  height: max-content;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* line 67, E:/DESARROLLO WEB/Proyecto final/SCSS/_inicio.scss */
+#contenedorInicioPrincipalSegundo #fotos {
+  width: 900px;
+  height: auto;
+  display: inline-flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* line 76, E:/DESARROLLO WEB/Proyecto final/SCSS/_inicio.scss */
+#contenedorInicioPrincipalSegundo .imagenInicio {
+  width: 180px;
+  height: 150px;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border-radius: 50px;
+}
+
+/* line 87, E:/DESARROLLO WEB/Proyecto final/SCSS/_inicio.scss */
+.imagenInicio:hover {
+  padding: 15px 15px;
+  border-style: groove;
+  background: var(--color-primario);
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0, 6s ease 0s;
+  box-shadow: 0 0 5px #00ff48, 0 0 25px, 0 0 50px #00ff48, 0 0 100px #00ff48, 0 0 200px #00ff48;
+}
+
+/* line 97, E:/DESARROLLO WEB/Proyecto final/SCSS/_inicio.scss */
+#contenedorInicioPrincipalSegundo .subtitulo {
+  background: var(--color-gradient1);
+  font-family: var(--fuente-subtitulo);
+  font-size: 15px;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px 10px;
+  justify-content: center;
+}
+
+/* line 108, E:/DESARROLLO WEB/Proyecto final/SCSS/_inicio.scss */
+#contenedorInicioPrincipalSegundo .subtitulo:hover {
+  color: var(--color-blanco);
+  padding: none;
+  background: var(--color-primario);
+  border-style: groove;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0, 5s ease 0s;
+  font-size: larger;
+}
+
+/*fin de segunda seccion de imagenes del Inicio*/
+/*Fin de pagina de inicio*/
+
+/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,31 @@
+.listas {
+    border: 3px solid;
+    border-style: none;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-family: var(--fuente-texto);
+}
+
+.accordion {
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.accordion-item:hover {
+    border-radius: 5px;
+    margin: 10px 10px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgb(58, 58, 58), 0 0 25px, 0 0 50px rgb(58, 58, 58), 0 0 100px rgb(58, 58, 58), 0 0 200px rgb(71, 71, 71);
+}
+
+.accordion-button {
+    font-family: var(--fuente-subtitulo);
+    cursor: pointer;
+    background: var(--color-secundario);
+    border-radius: 10px;
+}
+
+/*Fin de la pagina de "nosotros"*/

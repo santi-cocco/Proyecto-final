@@ -1,0 +1,52 @@
+/*Formulario de la pestaña prueba*/
+
+.form-group {
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    font-family: var(--fuente-subtitulo);
+    background: var(--color-secundario);
+    height: auto;
+    font-size: 18px;
+    padding: 0 15px;
+    border: 3px solid var(--color-primario);
+}
+
+#legend {
+    width: fit-content;
+    float: none;
+    border: 3px solid var(--color-primario);
+    font-size: 16px;
+    background: var(--color-gradient1);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    font-family: var(--fuente-titulo);
+}
+
+/* Estilos generales para los input */
+
+.input {
+    font-family: var(--fuente-texto);
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid var(--color-secundario);
+    border-radius: 5px;
+    transition: border-color 0.5s, box-shadow 0.5s;
+    font-size: 12px;
+
+    &:hover {
+        border: 2px solid;
+        border-color: var(--color-primario);
+        box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+        transform: scale(1.02);
+        transition: border 0.3s, box-shadow 0.3s, transform 0.3s;
+        cursor: pointer;
+    }
+
+    &:focus {
+        border: 6px solid var(--color-primario);
+        box-shadow: 0 0 10px var(--color-gradient1);
+    }
+}
